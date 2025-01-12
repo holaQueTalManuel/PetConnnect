@@ -15,6 +15,19 @@ export const GlobalStyles = StyleSheet.create({
         borderRadius: 40,
         width: "100%",
     },
+    containerRegistrarse:{
+        backgroundColor: Color.superWhite,
+        justifyContent: "center",
+        alignItems: "center",
+        flex: 1,
+    },
+    containerRegInput:{
+        backgroundColor: Color.blue,
+        padding: 20,
+        margin: 20,
+        borderRadius: 40,
+        width: "100%",
+    },
     textos:{
         fontSize: 20,
         color: Color.white,
@@ -24,7 +37,7 @@ export const GlobalStyles = StyleSheet.create({
     textoPetConnect:{
         fontSize: 40,
         color: Color.white,
-        fontFamily: "Poppins-Light",
+        fontFamily: "Poppins-Medium",
         textAlign: "center",
     },
     textInputs:{
@@ -61,6 +74,14 @@ export const GlobalStyles = StyleSheet.create({
         borderRadius: 20,
         alignItems: "center",
     },
+    botonesRegistro:{
+        backgroundColor: Color.white,
+        padding: 10,
+        width: 125,
+        color: Color.blue,
+        borderRadius: 20,
+        alignItems: "center",
+    },
     imgAnimalesInicioyRegistro:{
         width: 200,
         height: 200,
@@ -70,4 +91,28 @@ export const GlobalStyles = StyleSheet.create({
         left: 30,
         zIndex: 100,
     },
-})
+    imgAnimalesRegistro:{
+        width: 125,
+        height: 125,
+        position: "absolute",
+        
+        top: -80,
+        left: -90,
+        zIndex: 100,
+    },
+    patitas:{
+        width: 40,
+        height: 40,
+        position: "absolute",
+        top: 100,
+        left: 325,
+        zIndex: 100,
+        
+    },
+    row:{
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "space-around",
+        padding: 10,
+    },
+});
