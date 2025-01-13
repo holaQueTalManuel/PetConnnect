@@ -37,9 +37,10 @@ export const Login = () => {
             <TextInput placeholder="Contraseña" style={GlobalStyles.textInputs}/>
 
             <View style={GlobalStyles.containerButton}>
+                <Pressable onPress={()=> router.push('./mainpage')
+                }  style={GlobalStyles.botones}>Acceder</Pressable>
                 <Pressable onPress={()=> router.push('./register')
-                } style={GlobalStyles.botones}>Acceder</Pressable>
-                <Pressable style={GlobalStyles.botones}>Registrarse</Pressable>
+                } style={GlobalStyles.botones}>Registrarse</Pressable>
             </View>
         </View>
         <Link href="/" style={GlobalStyles.textos}>¿Olvidaste la contraseña?</Link>

@@ -41,8 +41,10 @@ export const Register = () => {
                 <TextInput placeholder="Repetir contraseña" style={GlobalStyles.textInputs}/>
     
                 <View style={GlobalStyles.containerButton}>
-                    <Pressable style={GlobalStyles.botonesRegistro}>Registrarse</Pressable>
-                    <Pressable style={GlobalStyles.botonesRegistro}>Cancelar</Pressable>
+                    <Pressable onPress={()=> router.push('./mainpage')
+                } style={GlobalStyles.botonesRegistro}>Registrarse</Pressable>
+                    <Pressable onPress={()=> router.push('./login')
+                } style={GlobalStyles.botonesRegistro}>Cancelar</Pressable>
                 </View>
             </View>
             
