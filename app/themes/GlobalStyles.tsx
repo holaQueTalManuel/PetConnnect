@@ -29,13 +29,14 @@ export const GlobalStyles = StyleSheet.create({
         width: "100%",
     },
     textos:{
-        fontSize: 20,
+        fontSize: 40,
         color: Color.white,
         fontFamily: "Poppins-Light",
         textAlign: "center",
+        
     },
     textoPetConnect:{
-        fontSize: 40,
+        fontSize: 100,
         color: Color.white,
         fontFamily: "Poppins-Medium",
         textAlign: "center",
@@ -56,8 +57,10 @@ export const GlobalStyles = StyleSheet.create({
         padding: 10,
     },
     imgLogo:{
-        width: 50, 
-        height: 50,
+        width: 100, 
+        height: 100,
+        marginBottom: 100,
+        paddingBottom:30,
         
     },
     containerButton:{
@@ -77,7 +80,7 @@ export const GlobalStyles = StyleSheet.create({
     botonesRegistro:{
         backgroundColor: Color.white,
         padding: 10,
-        width: 125,
+        width: 200,
         color: Color.blue,
         borderRadius: 20,
         alignItems: "center",
@@ -88,24 +91,24 @@ export const GlobalStyles = StyleSheet.create({
         position: "absolute",
         
         top: -125,
-        left: 30,
+        left: 170,
         zIndex: 100,
     },
     imgAnimalesRegistro:{
-        width: 125,
-        height: 125,
+        width: 250,
+        height: 250,
         position: "absolute",
-        
-        top: -80,
-        left: -90,
+        overflow: "visible",
+        top: -180,
+        left: -170,
         zIndex: 100,
     },
     patitas:{
-        width: 40,
-        height: 40,
+        width: 60,
+        height: 60,
         position: "absolute",
         top: 100,
-        left: 325,
+        left: 630,
         zIndex: 100,
         
     },
@@ -115,4 +118,20 @@ export const GlobalStyles = StyleSheet.create({
         justifyContent: "space-around",
         padding: 10,
     },
+    rowPro:{
+        flexDirection: "row",
+        alignItems: "center",
+        justifyContent: "flex-start",
+        padding: 10,
+        gap: 10,
+    },
+    column: {
+        flexDirection: "column",
+        alignItems: "center",
+        padding: 10,
+    },
+    imgSecciones:{
+        width: 100,
+        height: 100,
+    }
 });
