@@ -22,7 +22,7 @@ export default function HomePage() {
       <Image source={require('../../assets/images/PAGINA REGISTRO E INICIO DE SESION/perrito.png')} style={[GlobalStyles.imgAnimalesInicioyRegistro, {zIndex:200}, {top:-70}]}/>
   </View>
   <View>
-      <Image source={require('../../assets/images/PAGINA REGISTRO E INICIO DE SESION/gatito.png')} style={[GlobalStyles.imgAnimalesInicioyRegistro, {left:290}, {height:250}]}/>
+      <Image source={require('../../assets/images/PAGINA REGISTRO E INICIO DE SESION/gatito.png')} style={[GlobalStyles.imgAnimalesInicioyRegistro, {left:290}, {height:250} ,{resizeMode:'contain'}]}/>
   </View>
 
   <View>
@@ -38,9 +38,9 @@ export default function HomePage() {
 
   <View style={GlobalStyles.containerButton}>
       <Pressable onPress={()=> router.push('./mainpage')
-      }  style={GlobalStyles.botones}>Acceder</Pressable>
+      }  style={GlobalStyles.botones}><Text>Acceder</Text></Pressable>
       <Pressable onPress={()=> router.push('./register')
-      } style={GlobalStyles.botones}>Registrarse</Pressable>
+      } style={GlobalStyles.botones}><Text>Registrarse</Text></Pressable>
   </View>
 </View>
 <Link href="/" style={GlobalStyles.textos}>¿Olvidaste la contraseña?</Link>

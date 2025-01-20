@@ -43,9 +43,9 @@ export default function RegisterPage() {
 
         <View style={GlobalStyles.containerButton}>
             <Pressable onPress={()=> router.push('./mainpage')
-        } style={GlobalStyles.botonesRegistro}>Registrarse</Pressable>
+        } style={GlobalStyles.botonesRegistro}><Text>Registrarse</Text></Pressable>
             <Pressable onPress={()=> router.push('./login')
-        } style={GlobalStyles.botonesRegistro}>Cancelar</Pressable>
+        } style={GlobalStyles.botonesRegistro}><Text>Cancelar</Text></Pressable>
         </View>
     </View>
     

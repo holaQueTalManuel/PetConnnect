@@ -25,4 +25,8 @@ export const Input = ({ placeholder = "Email", isPassword = false, style}: Input
         </View>
     )
 
+
+    
 }
+
+export default Input;

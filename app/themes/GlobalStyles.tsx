@@ -1,7 +1,7 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import { Color } from './Color';
 
-export const GlobalStyles = StyleSheet.create({
+export  const GlobalStyles = StyleSheet.create({
     containerLogin:{
         backgroundColor: Color.blue,
         justifyContent: "center",
@@ -135,3 +135,5 @@ export const GlobalStyles = StyleSheet.create({
         height: 100,
     }
 });
+
+export default GlobalStyles;
