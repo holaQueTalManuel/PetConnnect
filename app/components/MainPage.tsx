@@ -8,7 +8,9 @@ import { Link, router } from "expo-router";
 export const MainPage = () => {
     return (
         <View style={[GlobalStyles.containerLogin, {position: "relative"}]}>
-            <Text>PACO SI LEES ESTO ME DEBES UN BESO Y SI SIGUES LEYENDO DOS</Text>
+            <Text></Text>
         </View>
     )
 }
+
+export default MainPage;

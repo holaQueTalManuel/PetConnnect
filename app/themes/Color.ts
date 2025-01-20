@@ -8,3 +8,5 @@ export const Color = {
     superWhite: '#FFFFFF'
 
 }as const
+
+export default Color;

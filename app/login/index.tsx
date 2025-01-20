@@ -38,9 +38,9 @@ export default function HomePage() {
 
   <View style={GlobalStyles.containerButton}>
       <Pressable onPress={()=> router.push('./mainpage')
-      }  style={GlobalStyles.botones}>Acceder</Pressable>
+      }  style={GlobalStyles.botones}><Text>Acceder</Text></Pressable>
       <Pressable onPress={()=> router.push('./register')
-      } style={GlobalStyles.botones}>Registrarse</Pressable>
+      } style={GlobalStyles.botones}><Text>Registrarse</Text></Pressable>
   </View>
 </View>
 <Link href="/" style={GlobalStyles.textos}>¿Olvidaste la contraseña?</Link>
