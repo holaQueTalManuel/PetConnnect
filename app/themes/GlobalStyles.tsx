@@ -139,7 +139,45 @@ export const GlobalStyles = StyleSheet.create({
         backgroundColor:Color.blue,
         width: "100%",
         flexDirection: "row",
+    },
+    tarjetaNaranja:{
+        backgroundColor:Color.softOrange,
+        borderRadius:20,
+        padding:20,
+        margin:30
+    },
+    textoTarjetas:{
+        color:Color.blue,
+        fontSize:30,
+        fontWeight:'bold'
+
+    },
+    tarjetaAzul:{
+        backgroundColor:Color.softBlue,
+        borderRadius:20,
+        padding:20,
+        margin:30, 
+        flexDirection:'row'
+    }, 
+    imgForo:{
+        width: 50, 
+        height: 50,
+        marginTop:20
+        
+    }, 
+    textoNumComentarios:{
+        color:Color.blue,
+        fontSize: 40,
+        fontWeight:'bold', 
+        marginLeft:5,
+        marginTop:15
+    }, 
+    textoHeader:{
+        color:Color.white,
+        fontSize: 40, 
+        fontWeight:'bold'
     }
+
 });
 
 export default GlobalStyles;
