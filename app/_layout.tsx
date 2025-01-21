@@ -5,7 +5,6 @@ import * as SplashScreen from 'expo-splash-screen';
 import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
-import { Input } from './components/Input';
 
 
 // Prevent the splash screen from auto-hiding before asset loading is complete.
@@ -20,7 +19,9 @@ export default function RootLayout() {
   const [loaded] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
     Poppins: require('../assets/fonts/Poppins-Light.ttf'),
-    PoppinsGordo: require('../assets/fonts/Poppins-Medium.ttf'),
+    PoppinsBold: require('../assets/fonts/Poppins-Bold.ttf'),
+    PoppinsReal: require('../assets/fonts/Poppins-SemiBold.ttf'),
+    Wendy: require('../assets/fonts/WendyOne-Regular.ttf'),
   });
 
   return (

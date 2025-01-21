@@ -14,6 +14,8 @@ export const GlobalStyles = StyleSheet.create({
         margin: 20,
         borderRadius: 40,
         width: "100%",
+        
+        
     },
     containerRegistrarse:{
         backgroundColor: Color.superWhite,
@@ -31,14 +33,14 @@ export const GlobalStyles = StyleSheet.create({
     textos:{
         fontSize: 40,
         color: Color.white,
-        fontFamily: "Poppins-Light",
+        fontFamily: "PoppinsBold",
         textAlign: "center",
         
     },
     textoPetConnect:{
         fontSize: 100,
         color: Color.white,
-        fontFamily: "Poppins-Medium",
+        fontFamily: "Wendy",
         textAlign: "center",
     },
     textInputs:{
@@ -73,6 +75,7 @@ export const GlobalStyles = StyleSheet.create({
         backgroundColor: Color.blue,
         padding: 10,
         width: 125,
+        height: 70,
         color: Color.white,
         borderRadius: 20,
         alignItems: "center",
@@ -86,11 +89,11 @@ export const GlobalStyles = StyleSheet.create({
         alignItems: "center",
     },
     imgAnimalesInicioyRegistro:{
-        width: 200,
-        height: 200,
+        width: 350,
+        height: 350,
         position: "absolute",
         
-        top: -125,
+        top: -390,
         left: 170,
         zIndex: 100,
     },
