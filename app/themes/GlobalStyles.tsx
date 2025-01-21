@@ -51,10 +51,10 @@ export const GlobalStyles = StyleSheet.create({
         margin: 10,
     },
     containerLogo:{
-        width: '100%',
+        width: '95%',
         flexDirection: 'row',
         justifyContent: 'flex-end',
-        padding: 10,
+        paddingTop: 10,
     },
     imgLogo:{
         width: 100, 
@@ -139,6 +139,23 @@ export const GlobalStyles = StyleSheet.create({
         backgroundColor:Color.blue,
         width: "100%",
         flexDirection: "row",
+    },
+    containerSuperiorBar:{
+        backgroundColor: Color.blue,
+        width: "100%",
+        height: "15%",
+    },
+    containerShelterLogo:{
+        width: '95%',
+        flexDirection: 'row',
+        justifyContent: 'flex-end',
+        paddingTop: 50,
+    },
+    imgShelterLogo:{
+        width: 100, 
+        height: 100,
+        marginBottom: 100,
+        paddingBottom:30,
     }
 });
 
