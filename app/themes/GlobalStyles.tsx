@@ -135,3 +135,5 @@ export const GlobalStyles = StyleSheet.create({
         height: 100,
     }
 });
+
+export default GlobalStyles;

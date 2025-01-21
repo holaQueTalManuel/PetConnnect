@@ -1,9 +1,8 @@
 import { TextInput, View, Image, Pressable } from "react-native";
-import { GlobalStyles } from "../themes/GlobalStyles"
+import { GlobalStyles } from "./themes/GlobalStyles"
 import { Text } from "react-native";
-import { Color } from "../themes/Color";
+import { Color } from "./themes/Color";
 import { Link, router } from "expo-router";
-import { Input } from "../components/Input";
 
 
 export default function Main() {
@@ -30,26 +29,30 @@ export default function Main() {
       </View>
       <View style={GlobalStyles.column}>
         <View style={GlobalStyles.rowPro}>
-          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}]} source={require('../../assets/images/PAGINA PRINCIPAL (HOME)/manos agarrando huellita.png')}></Image>
-          <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}]}>Comunidad animal</Text>
+          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/manos_agarrando_huellita.png')}></Image>
+          <Pressable onPress={() => router.push('/community')}>
+            <Text style={[GlobalStyles.textos, { color: Color.black }, { fontWeight: "bold" }]}>
+              Comunidad animal
+            </Text>
+          </Pressable>
         </View>
         <View style={GlobalStyles.rowPro}>
-          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}]} source={require('../../assets/images/PAGINA PRINCIPAL (HOME)/huellitas patas en marcha.png')}></Image>
+          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/huellitas_patas_en_marcha.png')}></Image>
           <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}]}>Patas en marcha</Text>
         </View>
 
         <View style={GlobalStyles.rowPro}>
-          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}]} source={require('../../assets/images/PAGINA PRINCIPAL (HOME)/huella patitas al rescate.png')}></Image>
+          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/huella_patitas_al_rescate.png')}></Image>
           <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}]}>Patitas al rescate</Text>
         </View>
 
         <View style={GlobalStyles.rowPro}>
-          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}]} source={require('../../assets/images/PAGINA PRINCIPAL (HOME)/adopt me.png')}></Image>
+          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/adopt_me.png')}></Image>
           <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}]}>Refugio de patitas</Text>
         </View>
 
         <View style={GlobalStyles.rowPro}>
-          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}]} source={require('../../assets/images/PAGINA PRINCIPAL (HOME)/lupa.png')}></Image>
+          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/lupa.png')}></Image>
           <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}]}>Sobre PetConnect</Text>
         </View>
 
@@ -60,8 +63,8 @@ export default function Main() {
         <Text style={[GlobalStyles.textos, {fontSize: 30}, {margin: 20}, {fontWeight: "bold"}]}>PROTECTORAS EN COLABORACIÓN</Text>
 
         <View style={{flexDirection: 'row', justifyContent: 'center', padding: 20, gap: 40}}>
-          <Image style={GlobalStyles.imgSecciones} source={require('../../assets/images/PAGINA PRINCIPAL (HOME)/logo protectora 1.png')}></Image>
-          <Image style={GlobalStyles.imgSecciones}  source={require('../../assets/images/PAGINA PRINCIPAL (HOME)/logo protectora 2.png')}></Image>
+          <Image style={GlobalStyles.imgSecciones} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/logo_protectora_1.png')}></Image>
+          <Image style={GlobalStyles.imgSecciones}  source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/logo_protectora_2.png')}></Image>
       </View>
       </View>
       
