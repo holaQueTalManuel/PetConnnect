@@ -123,6 +123,7 @@ export const GlobalStyles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "flex-start",
         padding: 10,
+        alignSelf: "center",
         gap: 10,
     },
     column: {
@@ -131,8 +132,13 @@ export const GlobalStyles = StyleSheet.create({
         padding: 10,
     },
     imgSecciones:{
-        width: 100,
-        height: 100,
+        width: 120,
+        height: 120,
+    },
+    containerHeader:{
+        backgroundColor:Color.blue,
+        width: "100%",
+        flexDirection: "row",
     }
 });
 

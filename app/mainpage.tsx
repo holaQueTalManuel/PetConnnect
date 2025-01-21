@@ -10,50 +10,64 @@ export default function Main() {
     <View style={[GlobalStyles.containerLogin, { position: "relative", backgroundColor: Color.superWhite }]}>
       
       {/* Encabezado */}
-      <View style={[GlobalStyles.row, { backgroundColor: Color.blue, marginBottom: 40 }, {width: "100%"}]}>
-        <Text style={[GlobalStyles.textoPetConnect, { fontSize: 40 }]}>PetConnect</Text>
+      <View style={[{flexDirection: 'column'}, {backgroundColor: Color.blue}, {width: '100%'}]}>
+        <View style={GlobalStyles.containerHeader}>
+          <Text style={GlobalStyles.textoPetConnect}> Petconnect</Text>
+          <Image style={GlobalStyles.imgLogo} source={require('../assets/images/ELEMENTOS_GENERALES/logo_2.png')}></Image>
+        </View>
+        <View style={GlobalStyles.containerHeader}>
+        <Image style={GlobalStyles.imgLogo} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/hola.png')}></Image>
+          <View ></View>
+        </View>
+      
       </View>
-
       {/* Texto SECCIONES */}
       <View style={{ width: "100%", paddingHorizontal: 20 }}> {/* Contenedor para alinear el texto */}
         <Text
           style={{
             color: Color.orange,
-            fontSize: 40,
+            fontSize: 50,
             fontWeight: "bold",
             textAlign: "left",
+            marginLeft:20, 
+            marginTop:20
           }}
         >
           SECCIONES
         </Text>
       </View>
-      <View style={GlobalStyles.column}>
-        <View style={GlobalStyles.rowPro}>
-          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/manos_agarrando_huellita.png')}></Image>
-          <Pressable onPress={() => router.push('/community')}>
-            <Text style={[GlobalStyles.textos, { color: Color.black }, { fontWeight: "bold" }]}>
-              Comunidad animal
-            </Text>
+      <View style={GlobalStyles.row}>
+
+        <View style={GlobalStyles.column}>
+          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}, {margin:20}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/manos_agarrando_huellita.png')}></Image>
+          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}, {margin:20}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/huellitas_patas_en_marcha.png')}></Image>
+          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}, {margin:20}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/huella_patitas_al_rescate.png')}></Image>
+          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}, {margin:20}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/adopt_me.png')}></Image>
+          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}, {margin:20}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/lupa.png')}></Image>
+        </View>
+        <View style={[GlobalStyles.column]}>
+          <Pressable onPress={()=> router.push('./community')
+        }>
+          <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}, {paddingTop:60}, {paddingBottom:60}]}>Comunidad animal</Text>
           </Pressable>
-        </View>
-        <View style={GlobalStyles.rowPro}>
-          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/huellitas_patas_en_marcha.png')}></Image>
-          <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}]}>Patas en marcha</Text>
-        </View>
 
-        <View style={GlobalStyles.rowPro}>
-          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/huella_patitas_al_rescate.png')}></Image>
-          <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}]}>Patitas al rescate</Text>
-        </View>
+        
+          <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}, {paddingTop:60}, {paddingBottom:60}]}>Patas en marcha</Text>
+      
 
-        <View style={GlobalStyles.rowPro}>
-          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/adopt_me.png')}></Image>
-          <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}]}>Refugio de patitas</Text>
-        </View>
+        
+          <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}, {paddingTop:60}, {paddingBottom:60}]}>Patitas al rescate</Text>
+       
 
-        <View style={GlobalStyles.rowPro}>
-          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/lupa.png')}></Image>
-          <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}]}>Sobre PetConnect</Text>
+        
+          <Pressable onPress={()=> router.push('./shelter')
+        }>
+          <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}, {paddingTop:60}, {paddingBottom:60}]}>Refugio de patitas</Text>
+          </Pressable>
+        
+
+        
+          <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}, {paddingTop:60}, {paddingBottom:60}]}>Sobre PetConnect</Text>
         </View>
 
 
@@ -69,5 +83,6 @@ export default function Main() {
       </View>
       
     </View>
+    
   );
 }

@@ -21,7 +21,7 @@ export default function HomePage() {
       <Image source={require('../assets/images/PAGINA_REGISTRO_E_INICIO_DE_SESION/perrito.png')} style={[GlobalStyles.imgAnimalesInicioyRegistro, {zIndex:200}, {top:-70}]}/>
   </View>
   <View>
-      <Image source={require('../assets/images/PAGINA_REGISTRO_E_INICIO_DE_SESION/gatito.png')} style={[GlobalStyles.imgAnimalesInicioyRegistro, {left:290}, {height:250}]}/>
+      <Image source={require('../assets/images/PAGINA_REGISTRO_E_INICIO_DE_SESION/gatito.png')} style={[GlobalStyles.imgAnimalesInicioyRegistro, {left:290}, {height:250}, {resizeMode:"contain"}]}/>
   </View>
 
   <View>

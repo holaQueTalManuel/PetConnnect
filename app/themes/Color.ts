@@ -1,6 +1,6 @@
 export const Color = {
-    blue: '#194A6E',
-    orange: '#FDB672',
+    blue: '#194A6E ',
+    orange: '#FD7712',
     lightBlue: '#A5C5D7',
     white: '#F9F9F9',
     grey: '#666666',
@@ -8,3 +8,5 @@ export const Color = {
     superWhite: '#FFFFFF'
 
 }as const
+
+export default Color;
