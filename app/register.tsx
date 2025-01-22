@@ -9,10 +9,10 @@ export default function RegisterPage() {
   return (
     <View style={[GlobalStyles.containerRegistrarse, {position: "relative"}]}>
         
-        <View style={GlobalStyles.containerLogo}>
+        <View style={[GlobalStyles.containerLogo, {marginTop: -60}]}>
             <Image source={require('../assets/images/ELEMENTOS_GENERALES/logo_2.png')} style={GlobalStyles.imgLogo}/>
         </View>
-        <View style={{marginBottom:100, marginTop:-10}}>
+        <View style={{marginBottom:100, marginTop:-60}}>
             <Text style={[GlobalStyles.textos, {color: Color.blue}]}>Registrate en</Text>
             <Text style={[GlobalStyles.textoPetConnect, {fontWeight: "bold"}, {color: Color.blue}, {paddingBottom: 90}]}>PetConnect</Text>
         </View>
@@ -35,23 +35,23 @@ export default function RegisterPage() {
         <View>
             <Image source={require('../assets/images/ELEMENTOS_GENERALES/huella_naranja.png')} style={[GlobalStyles.patitas, {transform: [{rotate: '-45deg'}]}, {left: -5}, {top:-10}]}/>
         </View>
-        <Text style={[GlobalStyles.textoPetConnect, {color: Color.white}, {fontSize: 60}, {fontWeight: "bold"}, {paddingTop: 35}, {paddingBottom:70}]}>¡Hazte parte del refugio!</Text>
-        <TextInput placeholder="Nombre" style={[GlobalStyles.textInputs, {height: 40}]}/>
-        <TextInput placeholder="Email" style={[GlobalStyles.textInputs, {height: 40}]}/>
-        <TextInput placeholder="Contraseña" style={[GlobalStyles.textInputs, {height: 40}]} secureTextEntry={true}/>
-        <TextInput placeholder="Repetir contraseña" style={[GlobalStyles.textInputs, {height: 40}]} secureTextEntry={true}/>
+        <Text style={[GlobalStyles.textoPetConnect, {color: Color.white}, {fontSize: 60}, {paddingTop: 35}, {paddingBottom:70}]}>¡Hazte parte del refugio!</Text>
+        <TextInput placeholder="Nombre" style={[GlobalStyles.textInputs, {height: 80}]}/>
+        <TextInput placeholder="Email" style={[GlobalStyles.textInputs, {height: 80}]}/>
+        <TextInput placeholder="Contraseña" style={[GlobalStyles.textInputs, {height: 80}]} secureTextEntry={true}/>
+        <TextInput placeholder="Repetir contraseña" style={[GlobalStyles.textInputs, {height: 80}]} secureTextEntry={true}/>
 
-        <View style={GlobalStyles.containerButton}>
+        <View style={[GlobalStyles.containerButton, {justifyContent: "space-between"}, {marginTop: 30}]}>
             <Pressable onPress={()=> router.push('./mainpage')
-        } style={GlobalStyles.botonesRegistro}><Text>Registrarse</Text></Pressable>
+        } style={GlobalStyles.botonesRegistro}><Text style={{color: Color.blue, fontSize: 23, paddingBottom: 5, fontFamily: "PoppinsBold"}}>Registrarse</Text></Pressable>
             <Pressable onPress={()=> router.push('./login')
-        } style={GlobalStyles.botonesRegistro}><Text>Cancelar</Text></Pressable>
+        } style={GlobalStyles.botonesRegistro}><Text style={{color: Color.blue, fontSize: 23, paddingBottom: 5, fontFamily: "PoppinsBold"}}>Cancelar</Text></Pressable>
         </View>
     </View>
     
-    <View style={GlobalStyles.row}>
-        <Text style={[GlobalStyles.textos, {paddingRight: 15}, {color:Color.blue}]}>¿Tienes ya una cuenta?</Text>
-        <Link href="./login" style={[GlobalStyles.textos, {color:Color.blue}, {fontWeight: "bold"}]}>Accede al refugio</Link>
+    <View style={[GlobalStyles.row, {justifyContent: "center"}, {marginBottom: -40}]}>
+        <Text style={[GlobalStyles.textos, {paddingRight: 30}, {color:Color.blue}, {fontFamily: "PoppinsRegular"}, {fontSize: 25}]}>¿Tienes ya una cuenta?</Text>
+        <Link href="./login" style={[GlobalStyles.textos, {color:Color.blue}, {textDecorationLine: "underline"}, {fontSize: 28}]}>Accede al refugio</Link>
     </View>
 
 
