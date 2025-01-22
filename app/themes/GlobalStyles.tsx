@@ -148,7 +148,18 @@ export const GlobalStyles = StyleSheet.create({
         backgroundColor:Color.blue,
         width: "100%",
         flexDirection: "row",
-    }
+        height: 210,
+        justifyContent: "space-around",
+        paddingTop: 40,
+    },
+    containerHeaderUsu:{
+        backgroundColor: Color.blue,
+        width: "100%",
+        flexDirection: "row",
+        height: 80,
+        paddingBottom: 20,
+    },
+
 });
 
 export default GlobalStyles;

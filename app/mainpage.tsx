@@ -12,12 +12,15 @@ export default function Main() {
       {/* Encabezado */}
       <View style={[{flexDirection: 'column'}, {backgroundColor: Color.blue}, {width: '100%'}]}>
         <View style={GlobalStyles.containerHeader}>
-          <Text style={GlobalStyles.textoPetConnect}> Petconnect</Text>
+          <Text style={[GlobalStyles.textoPetConnect, {fontSize: 30}]}> Petconnect</Text>
           <Image style={GlobalStyles.imgLogo} source={require('../assets/images/ELEMENTOS_GENERALES/logo_2.png')}></Image>
         </View>
-        <View style={GlobalStyles.containerHeader}>
-        <Image style={GlobalStyles.imgLogo} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/hola.png')}></Image>
-          <View ></View>
+        <View style={GlobalStyles.containerHeaderUsu}>
+          <Image style={[GlobalStyles.imgLogo, {marginLeft: 60}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/hola.png')}></Image>
+          <View style={[GlobalStyles.column, {height: 50}]}>
+            <Text style={[GlobalStyles.textos, {fontSize: 30}]}>Mario G.</Text>
+            <Text style={[GlobalStyles.textos, {fontSize: 20}]}>@mariogpets</Text>
+          </View>
         </View>
       
       </View>
@@ -36,10 +39,10 @@ export default function Main() {
           SECCIONES
         </Text>
       </View>
-      <View style={GlobalStyles.row}>
+      <View style={[GlobalStyles.row, {marginTop: -20}, {marginBottom: -100}]}>
 
         <View style={GlobalStyles.column}>
-          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}, {margin:20}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/manos_agarrando_huellita.png')}></Image>
+          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}, {margin:20}, {marginTop: -60}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/manos_agarrando_huellita.png')}></Image>
           <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}, {margin:20}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/huellitas_patas_en_marcha.png')}></Image>
           <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}, {margin:20}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/huella_patitas_al_rescate.png')}></Image>
           <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}, {margin:20}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/adopt_me.png')}></Image>
@@ -48,7 +51,7 @@ export default function Main() {
         <View style={[GlobalStyles.column]}>
           <Pressable onPress={()=> router.push('./community')
         }>
-          <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}, {paddingTop:60}, {paddingBottom:60}]}>Comunidad animal</Text>
+          <Text style={[GlobalStyles.textos, {color: Color.black}, {fontSize: 35}, {paddingTop:60}, {paddingBottom:60}]}>Comunidad animal</Text>
           </Pressable>
 
         
