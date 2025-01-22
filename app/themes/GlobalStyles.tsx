@@ -148,6 +148,7 @@ export const GlobalStyles = StyleSheet.create({
         backgroundColor:Color.blue,
         width: "100%",
         flexDirection: "row",
+<<<<<<< HEAD
         height: 210,
         justifyContent: "space-around",
         paddingTop: 40,
@@ -159,6 +160,53 @@ export const GlobalStyles = StyleSheet.create({
         height: 80,
         paddingBottom: 20,
     },
+=======
+    },
+    tarjetaNaranja:{
+        backgroundColor:Color.softOrange,
+        borderRadius:20,
+        padding:20,
+        margin:30
+    },
+    textoTarjetas:{
+        color:Color.blue,
+        fontSize:30,
+        fontWeight:'bold',
+         fontFamily: "PoppinsBold",
+
+    },
+    tarjetaAzul:{
+        backgroundColor:Color.softBlue,
+        borderRadius:20,
+        padding:20,
+        margin:30, 
+        flexDirection:'row'
+    }, 
+    imgForo:{
+        width: 50, 
+        height: 50,
+        marginTop:20
+        
+    }, 
+    textoNumComentarios:{
+        color:Color.blue,
+        fontSize: 40,
+        fontWeight:'bold', 
+        marginLeft:5,
+        fontFamily: "PoppinsBold",
+        marginTop:15
+    }, 
+    textoHeader:{
+        color:Color.white,
+        fontSize: 40, 
+        fontWeight:'bold',
+        fontFamily: "PoppinsBold",
+    }, 
+    imgHeader:{
+        width:70,
+        height:70,
+    }
+>>>>>>> be111cd5959b1a431b382ba42682bfe3a169bff7
 
 });
 
