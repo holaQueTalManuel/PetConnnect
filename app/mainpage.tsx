@@ -55,8 +55,13 @@ export default function Main() {
           <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}, {paddingTop:60}, {paddingBottom:60}]}>Patas en marcha</Text>
       
 
-        
+          <Pressable onPress={()=> router.push('./maps')
+        }>
           <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}, {paddingTop:60}, {paddingBottom:60}]}>Patitas al rescate</Text>
+          </Pressable>
+
+
+          
        
 
         
