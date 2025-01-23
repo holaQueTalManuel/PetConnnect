@@ -5,7 +5,9 @@ export const Color = {
     white: '#F9F9F9',
     grey: '#666666',
     black: '#000000',
-    superWhite: '#FFFFFF'
+    superWhite: '#FFFFFF',
+    lighterBlue: '#366288',
+    orange2: '#fdb672'
 
 }as const
 

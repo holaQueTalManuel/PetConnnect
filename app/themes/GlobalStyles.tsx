@@ -53,17 +53,16 @@ export const GlobalStyles = StyleSheet.create({
         margin: 10,
     },
     containerLogo:{
-        width: '95%',
+        width: '100%',
         flexDirection: 'row',
         justifyContent: 'flex-end',
-        paddingTop: 10,
+        padding: 10,
     },
     imgLogo:{
         width: 100, 
         height: 100,
         marginBottom: 100,
         paddingBottom:30,
-        
     },
     containerButton:{
         display: "flex",
@@ -143,22 +142,34 @@ export const GlobalStyles = StyleSheet.create({
         width: "100%",
         flexDirection: "row",
     },
-    containerSuperiorBar:{
-        backgroundColor: Color.blue,
-        width: "100%",
-        height: "15%",
-    },
-    containerShelterLogo:{
-        width: '95%',
-        flexDirection: 'row',
-        justifyContent: 'flex-end',
-        paddingTop: 50,
-    },
-    imgShelterLogo:{
-        width: 100, 
+    imgGeneral:{
+        width: 100,
         height: 100,
-        marginBottom: 100,
-        paddingBottom:30,
+    },
+    containerText:{
+        backgroundColor: Color.blue,
+        width: "90%",
+        flex: 1,
+        flexDirection: "column",
+        borderRadius: 20,
+        shadowColor: "#000",
+        shadowOffset: { width: 0, height: 2 },
+        shadowOpacity: 0.25,
+        shadowRadius: 4,
+        elevation: 5,
+    },
+    containerCategories:{
+        backgroundColor: Color.lightBlue,
+        borderRadius: 20,
+        width: "28%",
+        flexDirection: "column",
+        marginHorizontal: 10
+    },
+    containerAnimals:{
+        backgroundColor: Color.orange2,
+        borderRadius: 20,
+        width: "42%",
+        marginHorizontal: 10
     }
 });
 
