@@ -124,7 +124,7 @@ export const GlobalStyles = StyleSheet.create({
     row:{
         flexDirection: "row",
         alignItems: "center",
-        justifyContent: "space-around",
+        justifyContent: "space-between",
         padding: 10,
     },
     rowPro:{
@@ -148,7 +148,6 @@ export const GlobalStyles = StyleSheet.create({
         backgroundColor:Color.blue,
         width: "100%",
         flexDirection: "row",
-<<<<<<< HEAD
         height: 210,
         justifyContent: "space-around",
         paddingTop: 40,
@@ -157,10 +156,8 @@ export const GlobalStyles = StyleSheet.create({
         backgroundColor: Color.blue,
         width: "100%",
         flexDirection: "row",
-        height: 80,
-        paddingBottom: 20,
-    },
-=======
+        height: 120,
+        marginBottom: 30,
     },
     tarjetaNaranja:{
         backgroundColor:Color.softOrange,
@@ -206,7 +203,6 @@ export const GlobalStyles = StyleSheet.create({
         width:70,
         height:70,
     }
->>>>>>> be111cd5959b1a431b382ba42682bfe3a169bff7
 
 });
 

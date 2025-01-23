@@ -8,7 +8,8 @@ export const Color = {
     black: '#000000',
     superWhite: '#FFFFFF',
     softOrange: '#FDB066',
-    softBlue:'#A6C6D7'
+    softBlue:'#A6C6D7',
+    aquariusBlue: '#366288',
 
 }as const
 
