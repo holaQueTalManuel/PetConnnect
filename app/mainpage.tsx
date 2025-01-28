@@ -58,7 +58,9 @@ export default function Main() {
 
           <View style={GlobalStyles.row}>
             <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 80}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/huella_patitas_al_rescate.png')}></Image>
-            <Text style={[GlobalStyles.textos, {color: Color.black}, {fontSize: 40}]}>Patitas al rescate</Text>
+            <Pressable onPress={()=> router.push('./maps')}>
+              <Text style={[GlobalStyles.textos, {color: Color.black}, {fontSize: 40}]}>Patitas al rescate</Text>
+            </Pressable>
           </View>
 
           <View style={GlobalStyles.row}>
