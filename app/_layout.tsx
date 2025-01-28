@@ -15,13 +15,13 @@ SplashScreen.preventAutoHideAsync();
 
 export default function RootLayout() {
   
-  // Load custom fonts
   const [loaded] = useFonts({
     SpaceMono: require('../assets/fonts/SpaceMono-Regular.ttf'),
     Poppins: require('../assets/fonts/Poppins-Light.ttf'),
     PoppinsBold: require('../assets/fonts/Poppins-Bold.ttf'),
     PoppinsReal: require('../assets/fonts/Poppins-SemiBold.ttf'),
     PoppinsMedium: require('../assets/fonts/Poppins-Medium.ttf'),
+    PoppinsRegular: require('../assets/fonts/Poppins-Regular.ttf'),
     Wendy: require('../assets/fonts/WendyOne-Regular.ttf'),
   });
 

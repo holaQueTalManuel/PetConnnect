@@ -3,68 +3,55 @@ import { GlobalStyles } from "./themes/GlobalStyles"
 import { Text } from "react-native";
 import { Color } from "./themes/Color";
 import { Link, router } from "expo-router";
+import { withDecay } from "react-native-reanimated";
 
 
 export default function Community() {
   return (
     <View style={[GlobalStyles.containerLogin, { position: "relative", backgroundColor: Color.superWhite }]}>
       
-      {/* Encabezado */}
-      <View style={[GlobalStyles.row, { backgroundColor: Color.blue, marginBottom: 40 }, {width: "100%"}]}>
-        <Text style={[GlobalStyles.textoPetConnect, { fontSize: 40 }]}>PetConnect</Text>
+      <View style={[GlobalStyles.containerHeader, {marginTop:-35}, {padding:20}]}>
+            <Image style={[GlobalStyles.imgHeader,{marginTop:80}, {marginBottom:20}, {marginLeft:30},    ]}source={require('../assets/images/ELEMENTOS_GENERALES/icono_menu.png')}></Image>
+            <Text style={[GlobalStyles.textoHeader,{marginTop:80}, {marginBottom:40}, {marginLeft:38} ]}>COMUNIDAD ANIMAL</Text>
+            <Image style={[GlobalStyles.imgHeader,{marginTop:80}, {marginBottom:20} , {marginLeft:40}  ]}source={require('../assets/images/ELEMENTOS_GENERALES/logo_2.png')}></Image>
       </View>
 
-      {/* Texto SECCIONES */}
-      <View style={{ width: "100%", paddingHorizontal: 20 }}> {/* Contenedor para alinear el texto */}
-        <Text
-          style={{
-            color: Color.orange,
-            fontSize: 40,
-            fontWeight: "bold",
-            textAlign: "left",
-          }}
-        >
-          SECCIONES
-        </Text>
-      </View>
-      <View style={GlobalStyles.column}>
-        <View style={GlobalStyles.rowPro}>
-          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/manos_agarrando_huellita.png')}></Image>
-          <Link href={'./community'}>
-            <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}]}>Comunidad animal</Text>
-          </Link>
-        </View>
-        <View style={GlobalStyles.rowPro}>
-          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/huellitas_patas_en_marcha.png')}></Image>
-          <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}]}>Patas en marcha</Text>
-        </View>
 
-        <View style={GlobalStyles.rowPro}>
-          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/huella_patitas_al_rescate.png')}></Image>
-          <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}]}>Patitas al rescate</Text>
+      <View style={[GlobalStyles.tarjetaNaranja, {flexDirection:'column'}, {padding:30}]}>
+        <View style={[{flexDirection:'row'}]}>
+        <Image style={[GlobalStyles.imgLogo, {marginBottom:-5}]}source={require('../assets/images/FORO_DE_COMUNIDAD/calendario.png')} ></Image>
+          <Text style={[GlobalStyles.textoTarjetas, {marginTop:20}, {marginLeft:20}]}>PATITAS EN MARCHA (eventos)</Text>
         </View>
-
-        <View style={GlobalStyles.rowPro}>
-          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/adopt_me.png')}></Image>
-          <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}]}>Refugio de patitas</Text>
-        </View>
-
-        <View style={GlobalStyles.rowPro}>
-          <Image style={[GlobalStyles.imgSecciones, {backgroundColor: Color.orange}, {marginRight: 40}]} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/lupa.png')}></Image>
-          <Text style={[GlobalStyles.textos, {color: Color.black}, {fontWeight: "bold"}]}>Sobre PetConnect</Text>
-        </View>
-
-
+        <Text style={[GlobalStyles.textoTarjetas, {fontSize:28}, ]}>Descubre eventos solidarios creados por la
+            comunidad: actividades deportivas, caminatas
+            y mucho más. 🐾❤️ Cada participación suma
+            para ayudar a los animales que más lo
+            necesitan. ¡Únete y sé parte del cambio!</Text>
       </View>
 
-      <View style={{backgroundColor: Color.blue, width: '100%'}}>
-        <Text style={[GlobalStyles.textos, {fontSize: 30}, {margin: 20}, {fontWeight: "bold"}]}>PROTECTORAS EN COLABORACIÓN</Text>
+      <Text style={[{color:Color.blue}, {fontSize:40}, {fontWeight:"bold"}, {marginRight:240}, {fontFamily: "PoppinsBold",}]}>TEMAS DE DISCUSIÓN</Text>
 
-        <View style={{flexDirection: 'row', justifyContent: 'center', padding: 20, gap: 40}}>
-          <Image style={GlobalStyles.imgSecciones} source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/logo_protectora_1.png')}></Image>
-          <Image style={GlobalStyles.imgSecciones}  source={require('../assets/images/PAGINA_PRINCIPAL_(HOME)/logo_protectora_2.png')}></Image>
+      <View style={GlobalStyles.tarjetaAzul}>
+        <Text style={GlobalStyles.textoTarjetas}>Guías de alimentación B.A.R.F para tu animal</Text>
+        <Image style={[GlobalStyles.imgForo]}source={require('../assets/images/FORO_DE_COMUNIDAD/bocadillo de mensaje.png')} ></Image>
+        <Text style={[GlobalStyles.textoNumComentarios]}>15</Text>
       </View>
+      <View style={GlobalStyles.tarjetaAzul}>
+        <Text style={GlobalStyles.textoTarjetas}>Consejos para sobrellevar el calor con tu mascota</Text>
+        <Image style={[GlobalStyles.imgForo]}source={require('../assets/images/FORO_DE_COMUNIDAD/bocadillo de mensaje.png')} ></Image>
+        <Text style={[GlobalStyles.textoNumComentarios]}>24</Text>
       </View>
+      <View style={GlobalStyles.tarjetaAzul}>
+        <Text style={GlobalStyles.textoTarjetas}>Métodos de adiestramiento canino para principiantes</Text>
+        <Image style={[GlobalStyles.imgForo]}source={require('../assets/images/FORO_DE_COMUNIDAD/bocadillo de mensaje.png')} ></Image>
+        <Text style={[GlobalStyles.textoNumComentarios]}>12</Text>
+      </View>
+      
+      <View style={[GlobalStyles.tarjetaNaranja, {padding:30}, {width:"92%"}]}>
+        <Text style={[GlobalStyles.textoTarjetas, {textAlign:'center'}]}>EMPEZAR UNA NUEVA DISCUSIÓN</Text>
+      </View>
+
+     
       
     </View>
   );

@@ -45,12 +45,14 @@ export const GlobalStyles = StyleSheet.create({
     },
     textInputs:{
         borderWidth: 1, 
-        backgroundColor: Color.orange,
+        backgroundColor: Color.orangeClarito,
         borderColor: Color.white, 
-        borderRadius: 20,
+        borderRadius: 40,
         color: Color.grey,
         padding: 10, 
         margin: 10,
+        fontSize: 20,
+        fontFamily: "PoppinsBold",
     },
     containerLogo:{
         width: '100%',
@@ -68,24 +70,28 @@ export const GlobalStyles = StyleSheet.create({
         display: "flex",
         flexDirection: "row",
         justifyContent: "space-around",
+        alignItems: "center",
         margin: 10,
     },
     botones:{
         backgroundColor: Color.blue,
         padding: 10,
-        width: 125,
+        width: 270,
         height: 70,
         color: Color.white,
-        borderRadius: 20,
+        borderRadius: 50,
         alignItems: "center",
+        justifyContent: "center",
     },
     botonesRegistro:{
-        backgroundColor: Color.white,
+        backgroundColor: Color.superWhite,
         padding: 10,
-        width: 200,
+        width: 270,
+        height: 70,
         color: Color.blue,
-        borderRadius: 20,
+        borderRadius: 50,
         alignItems: "center",
+        justifyContent: "center",
     },
     imgAnimalesInicioyRegistro:{
         width: 350,
@@ -117,7 +123,7 @@ export const GlobalStyles = StyleSheet.create({
     row:{
         flexDirection: "row",
         alignItems: "center",
-        justifyContent: "space-around",
+        justifyContent: "space-between",
         padding: 10,
     },
     rowPro:{
@@ -158,19 +164,64 @@ export const GlobalStyles = StyleSheet.create({
         shadowRadius: 4,
         elevation: 5,
     },
-    containerCategories:{
-        backgroundColor: Color.lightBlue,
-        borderRadius: 20,
-        width: "28%",
-        flexDirection: "column",
-        marginHorizontal: 10
+
+    containerHeaderUsu:{
+        backgroundColor: Color.blue,
+        width: "100%",
+        flexDirection: "row",
+        height: 120,
+        marginBottom: 30,
     },
-    containerAnimals:{
-        backgroundColor: Color.orange2,
-        borderRadius: 20,
-        width: "42%",
-        marginHorizontal: 10
+    tarjetaNaranja:{
+        backgroundColor:Color.softOrange,
+        borderRadius:20,
+        padding:20,
+        margin:30
+    },
+    textoTarjetas:{
+        color:Color.blue,
+        fontSize:30,
+        fontWeight:'bold',
+         fontFamily: "PoppinsBold",
+
+    },
+    tarjetaAzul:{
+        backgroundColor:Color.softBlue,
+        borderRadius:20,
+        padding:20,
+        margin:30, 
+        flexDirection:'row'
+    }, 
+    imgForo:{
+        width: 50, 
+        height: 50,
+        marginTop:20
+        
+    }, 
+    textoNumComentarios:{
+        color:Color.blue,
+        fontSize: 40,
+        fontWeight:'bold', 
+        marginLeft:5,
+        fontFamily: "PoppinsBold",
+        marginTop:15
+    }, 
+    textoHeader:{
+        color:Color.white,
+        fontSize: 40, 
+        fontWeight:'bold',
+        fontFamily: "PoppinsBold",
+    }, 
+    imgHeader:{
+        width:70,
+        height:70,
+    },
+    backArrow:{
+        width: 130, 
+        height: 130, 
+        marginVertical: 20
     }
+
 });
 
 export default GlobalStyles;
