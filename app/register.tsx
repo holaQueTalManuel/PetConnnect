@@ -10,7 +10,7 @@ export default function RegisterPage() {
     <View style={[GlobalStyles.containerRegistrarse, {position: "relative"}]}>
         
         <View style={[GlobalStyles.containerLogo, {marginTop: -60}]}>
-            <Image source={require('../assets/images/ELEMENTOS_GENERALES/logo_2.png')} style={GlobalStyles.imgLogo}/>
+            <Image source={require('../assets/images/ELEMENTOS_GENERALES/logo_2.png')} style={[GlobalStyles.imgLogo, {marginRight: 20}]}/>
         </View>
         <View style={{marginBottom:100, marginTop:-60}}>
             <Text style={[GlobalStyles.textos, {color: Color.blue}]}>Registrate en</Text>
@@ -35,7 +35,7 @@ export default function RegisterPage() {
         <View>
             <Image source={require('../assets/images/ELEMENTOS_GENERALES/huella_naranja.png')} style={[GlobalStyles.patitas, {transform: [{rotate: '-45deg'}]}, {left: -5}, {top:-10}]}/>
         </View>
-        <Text style={[GlobalStyles.textoPetConnect, {color: Color.white}, {fontSize: 60}, {paddingTop: 35}, {paddingBottom:70}]}>¡Hazte parte del refugio!</Text>
+        <Text style={[GlobalStyles.textoAccederRefugio, {color: Color.white}, {fontSize: 50}, {paddingTop: 35}, {paddingBottom:70}]}>¡Hazte parte del refugio!</Text>
         <TextInput placeholder="Nombre" style={[GlobalStyles.textInputs, {height: 80}]}/>
         <TextInput placeholder="Email" style={[GlobalStyles.textInputs, {height: 80}]}/>
         <TextInput placeholder="Contraseña" style={[GlobalStyles.textInputs, {height: 80}]} secureTextEntry={true}/>
@@ -43,9 +43,9 @@ export default function RegisterPage() {
 
         <View style={[GlobalStyles.containerButton, {justifyContent: "space-between"}, {marginTop: 30}]}>
             <Pressable onPress={()=> router.push('./mainpage')
-        } style={GlobalStyles.botonesRegistro}><Text style={{color: Color.blue, fontSize: 23, paddingBottom: 5, fontFamily: "PoppinsBold"}}>Registrarse</Text></Pressable>
+        } style={[GlobalStyles.botones, {backgroundColor: Color.white}]}><Text style={{color: Color.blue, fontSize: 30, paddingBottom: 5, fontFamily: "PoppinsBold"}}>Registrarse</Text></Pressable>
             <Pressable onPress={()=> router.push('./login')
-        } style={GlobalStyles.botonesRegistro}><Text style={{color: Color.blue, fontSize: 23, paddingBottom: 5, fontFamily: "PoppinsBold"}}>Cancelar</Text></Pressable>
+        } style={[GlobalStyles.botones, {backgroundColor: Color.white}]}><Text style={{color: Color.blue, fontSize: 30, paddingBottom: 5, fontFamily: "PoppinsBold"}}>Cancelar</Text></Pressable>
         </View>
     </View>
     

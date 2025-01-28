@@ -11,9 +11,12 @@ export default function Community() {
     <View style={[GlobalStyles.containerLogin, { position: "relative", backgroundColor: Color.superWhite }]}>
       
       <View style={[GlobalStyles.containerHeader, {marginTop:-35}, {padding:20}]}>
-            <Image style={[GlobalStyles.imgHeader,{marginTop:80}, {marginBottom:20}, {marginLeft:30},    ]}source={require('../assets/images/ELEMENTOS_GENERALES/icono_menu.png')}></Image>
-            <Text style={[GlobalStyles.textoHeader,{marginTop:80}, {marginBottom:40}, {marginLeft:38} ]}>COMUNIDAD ANIMAL</Text>
-            <Image style={[GlobalStyles.imgHeader,{marginTop:80}, {marginBottom:20} , {marginLeft:40}  ]}source={require('../assets/images/ELEMENTOS_GENERALES/logo_2.png')}></Image>
+
+            <Pressable onPress={()=> router.push('./mainpage')}>
+              <Image style={[GlobalStyles.backArrow, {marginLeft:10, marginTop: 40, marginBottom: 0}]}source={require('../assets/images/ELEMENTOS_GENERALES/back_arrow_white.png')}></Image>
+            </Pressable>
+            <Text style={[GlobalStyles.textoHeader, {marginLeft:40, marginTop: 80, fontSize: 30} ]}>COMUNIDAD ANIMAL</Text>
+            <Image style={[GlobalStyles.imgGeneral , {marginLeft:75, marginTop: 55}]}source={require('../assets/images/ELEMENTOS_GENERALES/logo_2.png')}></Image>
       </View>
 
 

@@ -11,9 +11,13 @@ export default function Community() {
     <View style={[GlobalStyles.containerLogin, { position: "relative", backgroundColor: Color.superWhite }]}>
       
       <View style={[GlobalStyles.containerHeader, {marginTop:-35}, {padding:20}]}>
-            <Image style={[GlobalStyles.imgHeader,{marginTop:90}, {marginBottom:20}, {marginLeft:30},    ]}source={require('../assets/images/ELEMENTOS_GENERALES/icono_menu.png')}></Image>
-            <Text style={[GlobalStyles.textoHeader,{marginTop:90}, {marginBottom:30}, {marginLeft:38} ]}>PATITAS AL RESCATE</Text>
-            <Image style={[GlobalStyles.imgHeader,{marginTop:90}, {marginBottom:20} , {marginLeft:40}  ]}source={require('../assets/images/ELEMENTOS_GENERALES/logo_2.png')}></Image>
+            
+            <Pressable onPress={()=> router.push('./mainpage')}>
+              <Image style={[GlobalStyles.backArrow, {marginTop: 100}, {marginBottom: 0}, {marginLeft: 10}]}source={require('../assets/images/ELEMENTOS_GENERALES/back_arrow_white.png')}></Image>
+            </Pressable>
+            
+            <Text style={[GlobalStyles.textoHeader,{marginTop:140}, {fontSize: 36}]}>PATITAS AL RESCATE</Text>
+            <Image style={[GlobalStyles.imgGeneral,{marginTop:115}, {marginLeft:62}]}source={require('../assets/images/ELEMENTOS_GENERALES/logo_2.png')}></Image>
       </View>
 
 
@@ -32,8 +36,8 @@ export default function Community() {
             <View style={[{flexDirection:'row'}]}>
             <Image style={[{width:60}, {height:60}]}source={require('../assets/images/ELEMENTOS_GENERALES/location_icon.png')} ></Image>
             <View style={[{flexDirection:'column'}]}>
-                <Text style={[{color:Color.blue}, {fontFamily: "Poppins"},{fontSize:25},{textAlign:"center"},{marginTop:-5}, {marginLeft:20}, {fontStyle:"italic"}]}>Añade la ubicación pulsando en el</Text>
-                <Text style={[{color:Color.blue}, {fontFamily: "Poppins"},{fontSize:25},{textAlign:"center"}, {marginLeft:20}, {fontStyle:"italic"}]}> mapa o usando la barra de búsqueda</Text>
+                <Text style={[{color:Color.blue}, {fontFamily: "Poppins"},{fontSize:25},{textAlign:"center"},{marginTop:-5}, {marginLeft:20}, {fontStyle:"italic"}, {color: Color.black}]}>Añade la ubicación pulsando en el</Text>
+                <Text style={[{color:Color.blue}, {fontFamily: "Poppins"},{fontSize:25},{textAlign:"center"}, {marginLeft:20}, {fontStyle:"italic"}, {color: Color.black}]}> mapa o usando la barra de búsqueda</Text>
             </View>
             
             </View>

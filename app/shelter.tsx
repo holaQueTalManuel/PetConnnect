@@ -8,14 +8,14 @@ import { router } from "expo-router";
 export default function ShelterPage() {
   return (
     <View>
-      <View style={[GlobalStyles.containerHeader, {backgroundColor: Color.lighterBlue, alignItems: "center", justifyContent: "space-between", paddingHorizontal: 30}]}>
+      <View style={[GlobalStyles.containerHeader, {alignItems: "center", justifyContent: "space-between", paddingHorizontal: 30}]}>
         
         <Pressable onPress={()=> router.push('./mainpage')}>
-          <Image style={[GlobalStyles.backArrow]}source={require('../assets/images/ELEMENTOS_GENERALES/back_arrow.png')}/>
+          <Image style={[GlobalStyles.backArrow]}source={require('../assets/images/ELEMENTOS_GENERALES/back_arrow_white.png')}/>
         </Pressable>
 
-        <Text style={styles.textoHeader}>REFUGIO DE PATITAS</Text>
-        <Image source={require('../assets/images/ELEMENTOS_GENERALES/logo_2.png')} style={[GlobalStyles.imgGeneral, {marginVertical: 40, marginRight: 0}]}/>
+        <Text style={styles.textoHeader}>REFUGIO DE GATITAS</Text>
+        <Image source={require('../assets/images/ELEMENTOS_GENERALES/logo_2.png')} style={[GlobalStyles.imgGeneral, {marginVertical: 40}]}/>
     </View>
 
     <View style={[GlobalStyles.containerText, {padding: 20, margin: 30, elevation: 50}]}>
@@ -45,10 +45,9 @@ export default function ShelterPage() {
 
     <View style={{flexDirection: "row", marginLeft: 40}}>
       <View style={[styles.containerAnimals, {marginRight: 35}]}>
-        <Pressable onPress={()=> router.push('./animal')}>
+        <Pressable onPress={()=> router.push('./pluto')}>
           <Image source={require('../assets/images/CATALOGO_DE_ADOPCIONES/Pluto.png')} style={styles.imgAdopt}/>
         </Pressable>
-        
         <View style={{flexDirection: "row"}}>
           <View style={{flexDirection: "column", alignItems: "flex-start"}}>
             <Text style={[styles.textosAnimalesPrincipal]}>Pluto</Text>
@@ -58,7 +57,9 @@ export default function ShelterPage() {
         </View>
       </View>
       <View style={styles.containerAnimals}>
-        <Image source={require('../assets/images/CATALOGO_DE_ADOPCIONES/Afro_y_Shaggy.png')} style={styles.imgAdopt}/>
+        <Pressable onPress={()=> router.push('./afro')}>
+          <Image source={require('../assets/images/CATALOGO_DE_ADOPCIONES/Afro_y_Shaggy.png')} style={styles.imgAdopt}/>
+        </Pressable>
         <View style={{flexDirection: "row"}}>
           <View style={{flexDirection: "column", alignItems: "flex-start"}}>
             <Text style={[styles.textosAnimalesPrincipal]}>Afro y Shaggy</Text>
@@ -71,8 +72,10 @@ export default function ShelterPage() {
 
     <View style={{flexDirection: "row", marginLeft: 40}}>
       <View style={[styles.containerAnimals, {marginTop: 20, marginRight: 35}]}>
-        <Image source={require('../assets/images/CATALOGO_DE_ADOPCIONES/Eros.png')} style={styles.imgAdopt}/>
-        <View style={{flexDirection: "row"}}>
+        <Pressable onPress={()=> router.push('./eros')}>
+          <Image source={require('../assets/images/CATALOGO_DE_ADOPCIONES/Eros.png')} style={styles.imgAdopt}/>
+        </Pressable>
+         <View style={{flexDirection: "row"}}>
           <View style={{flexDirection: "column", alignItems: "flex-start"}}>
             <Text style={[styles.textosAnimalesPrincipal]}>Eros</Text>
             <Text style={[styles.textosAnimales]}>Macho, 6 meses </Text>
@@ -81,7 +84,9 @@ export default function ShelterPage() {
         </View>
       </View>
       <View style={[styles.containerAnimals, {marginTop: 20}]}>
-        <Image source={require('../assets/images/CATALOGO_DE_ADOPCIONES/Stelle.png')} style={styles.imgAdopt}/>
+        <Pressable onPress={()=> router.push('./stelle')}>
+          <Image source={require('../assets/images/CATALOGO_DE_ADOPCIONES/Stelle.png')} style={styles.imgAdopt}/>
+        </Pressable>
         <View style={{flexDirection: "row"}}>
           <View style={{flexDirection: "column", alignItems: "flex-start"}}>
             <Text style={[styles.textosAnimalesPrincipal]}>Stelle</Text>

@@ -49,10 +49,12 @@ export const GlobalStyles = StyleSheet.create({
         borderColor: Color.white, 
         borderRadius: 40,
         color: Color.grey,
-        padding: 10, 
+        padding: 10,
+        height: 75,
+        paddingLeft: 40, 
         margin: 10,
-        fontSize: 20,
-        fontFamily: "PoppinsBold",
+        fontSize: 30,
+        fontFamily: "Poppins",
     },
     containerLogo:{
         width: '100%',
@@ -82,6 +84,7 @@ export const GlobalStyles = StyleSheet.create({
         borderRadius: 50,
         alignItems: "center",
         justifyContent: "center",
+        paddingVertical: 50
     },
     botonesRegistro:{
         backgroundColor: Color.superWhite,
@@ -97,7 +100,6 @@ export const GlobalStyles = StyleSheet.create({
         width: 350,
         height: 350,
         position: "absolute",
-        
         top: -390,
         left: 170,
         zIndex: 100,
@@ -136,7 +138,7 @@ export const GlobalStyles = StyleSheet.create({
     },
     column: {
         flexDirection: "column",
-        alignItems: "center",
+        alignItems: "flex-start",
         padding: 10,
     },
     imgSecciones:{
@@ -144,7 +146,7 @@ export const GlobalStyles = StyleSheet.create({
         height: 120,
     },
     containerHeader:{
-        backgroundColor:Color.blue,
+        backgroundColor:Color.lighterBlue,
         width: "100%",
         flexDirection: "row",
     },
@@ -166,7 +168,7 @@ export const GlobalStyles = StyleSheet.create({
     },
 
     containerHeaderUsu:{
-        backgroundColor: Color.blue,
+        backgroundColor: Color.lighterBlue,
         width: "100%",
         flexDirection: "row",
         height: 120,
@@ -220,6 +222,15 @@ export const GlobalStyles = StyleSheet.create({
         width: 130, 
         height: 130, 
         marginVertical: 20
+    },
+    textoAccederRefugio:{
+        color: Color.blue, 
+        fontSize: 65, 
+        paddingTop: 100, 
+        paddingBottom:60,
+        fontFamily: "PoppinsBold",
+        textAlign: "center",
+
     }
 
 });
