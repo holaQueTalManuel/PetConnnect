@@ -14,7 +14,7 @@ export default function ShelterPage() {
           <Image style={[GlobalStyles.backArrow]}source={require('../assets/images/ELEMENTOS_GENERALES/back_arrow_white.png')}/>
         </Pressable>
 
-        <Text style={styles.textoHeader}>REFUGIO DE GATITAS</Text>
+        <Text style={styles.textoHeader}>REFUGIO DE PATITAS</Text>
         <Image source={require('../assets/images/ELEMENTOS_GENERALES/logo_2.png')} style={[GlobalStyles.imgGeneral, {marginVertical: 40}]}/>
     </View>
 

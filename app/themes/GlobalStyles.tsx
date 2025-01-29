@@ -231,7 +231,120 @@ export const GlobalStyles = StyleSheet.create({
         fontFamily: "PoppinsBold",
         textAlign: "center",
 
+    },
+    textoTitulo:{
+        color: Color.blue, 
+        width: 600, 
+        marginRight: 10,
+        fontSize: 40,
+        fontFamily: "PoppinsBold",
+        textAlign: "center",
+    },
+    containerAnimal:{
+        borderRadius: 20, 
+        width: "90%",
+        backgroundColor: Color.white
+    },
+    imgAnimal:{
+        marginTop: 50,
+        width: 540, 
+        height: 400, 
+        borderRadius: 20, 
+        alignSelf: "center"
+    },
+    textoNombreAnimal:{
+        fontSize: 40,
+        marginTop: 20,
+        marginLeft: 60,
+        color: Color.blue,
+        fontFamily: "PoppinsBold",
+        textAlign: "left"
+    },
+    textosGenerales:{
+        fontSize: 30,
+        color: Color.blue,
+        fontFamily: "Poppins",
+        textAlign: "left"
+    },
+    imgFav:{
+        width: 100, 
+        height:100, 
+        marginTop: 20, 
+        marginLeft: 300
+    },
+    containerAnimalData:{
+        flexDirection: "column",
+        borderRadius: 20,
+        backgroundColor: Color.orangeClarito,
+        padding: 20, 
+        width: 160,
+        marginHorizontal: 10,
+        marginVertical:30
+    },
+    textoCategoriaDatos:{
+        fontSize: 20,
+        color: Color.blue,
+        fontFamily: "Poppins",
+        textAlign: "center"
+    },
+    textoDatosAnimal:{
+        fontSize: 20,
+        color: Color.blue,
+        fontFamily: "PoppinsBold",
+        textAlign: "center"
+    },
+    imgPerfilUsuario:{
+        width: 80,
+        height: 80,
+        borderRadius: 40,
+        borderColor: Color.blue
+    },
+    textoNombreUsuario:{
+        fontSize: 40,
+        color: Color.blue,
+        fontFamily: "PoppinsBold",
+        textAlign: "left"
+    },
+    containerContactImages:{
+        flexDirection: "column",
+        justifyContent: "flex-end",
+        borderRadius: 30,
+        backgroundColor: Color.orangeClarito,
+        padding: 10,
+        marginHorizontal: 10,
+    },
+    imgContact:{
+        width: 60,
+        height: 60,
+        borderColor: Color.blue
+    },
+    textoInfoAnimal:{
+        fontSize: 20,
+        color: Color.blue,
+        fontFamily: "PoppinsBold",
+        textAlign: "left",
+        width: 525, 
+        alignSelf: "center", 
+        marginTop: 20,
+        paddingTop: 10,
+        paddingBottom: 30,
+    },
+    containerAdopt:{
+        borderRadius: 20,
+        backgroundColor: Color.blue,
+        paddingHorizontal: 20,
+        paddingVertical: 30,
+        marginTop: 40
+    },
+    textoAdoptar:{
+        fontSize: 50,
+        width: 610,
+        color: Color.white,
+        fontFamily: "PoppinsBold",
+        textAlign: "center",
+
     }
+
 
 });
 
